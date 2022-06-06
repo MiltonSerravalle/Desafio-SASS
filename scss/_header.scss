@@ -1,0 +1,90 @@
+/* HEADER */
+.bodyHeader {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @include responsive (mobile) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        img {
+            justify-content: center;
+            width: 300px;
+            height: 200px;
+            margin-right: 35px;
+        }
+    }
+
+    .mobileMenu {
+        display: none;
+
+        @include responsive (mobile) {
+            display: block;
+            color: rgb(0, 0, 0);
+            background: #ffffff;
+            font-style: normal;
+            font-size: 1.2em;
+            padding: 10px;
+
+            #buttonMenu {
+                display: none;
+            }
+
+            input:checked~.bodyHeaderNav {
+                margin: 0;
+            }
+
+        }
+    }
+
+    .bodyHeaderNav {
+        @include responsive (mobile) {
+            position: absolute;
+            width: 50%;
+            margin-left: -70%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: black;
+            justify-content: center;
+            border-radius: 15px;
+            width: 100%;
+
+            @include responsive (mobile) {
+                flex-direction: column;
+            }
+
+            li a {
+                font-size: 20px;
+                color: white;
+                display: block;
+                text-decoration: none;
+                padding: 10px 15px;
+                font-family: 'Oswald', sans-serif;
+
+                @include responsive (mobile) {
+                    box-sizing: border-box;
+                    display: block;
+                    width: 100%;
+                    border-top: 1px solid #333;
+                }
+
+                &:hover {
+                    background: $the-green;
+                    color: rgb(14, 1, 1);
+                }
+            }
+
+        }
+
+    }
+}

@@ -133,60 +133,6 @@
     padding-bottom: 5px;
     margin-bottom: 10px; }
 
-/*MAIN CONTACTO*/
-.bodyContact {
-  grid-area: main;
-  background-color: black;
-  width: 100vw;
-  height: 100%;
-  padding-top: 20px; }
-  .bodyContact h1 {
-    background-color: #3df804;
-    text-align: center;
-    margin: auto;
-    font-family: 'Oswald', sans-serif;
-    height: 45px;
-    border-radius: 10px;
-    width: 200px; }
-  .bodyContact .bodyContactSection .bodyContactForm {
-    border-radius: 15px;
-    border-color: #3df804;
-    background-color: #000000;
-    list-style-type: none;
-    padding: 0;
-    border-radius: 3px;
-    text-align: center; }
-    .bodyContact .bodyContactSection .bodyContactForm .formDivButton {
-      display: flex;
-      justify-content: space-evenly;
-      margin: 15px; }
-      .bodyContact .bodyContactSection .bodyContactForm .formDivButton:hover {
-        transition: .2s;
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 5px 5px 0px #000000; }
-    .bodyContact .bodyContactSection .bodyContactForm .formItem {
-      display: flex;
-      flex-direction: column;
-      padding: .5em;
-      justify-content: center; }
-      .bodyContact .bodyContactSection .bodyContactForm .formItem label {
-        padding: .5em 1em .5em 0;
-        color: #3df804;
-        font-size: 25px;
-        text-align: center;
-        margin: auto; }
-      .bodyContact .bodyContactSection .bodyContactForm .formItem .formInput {
-        background-color: black;
-        color: #3df804;
-        width: 50%;
-        text-align: center;
-        margin: auto; }
-        .bodyContact .bodyContactSection .bodyContactForm .formItem .formInput:hover {
-          transition: .2s;
-          transform: translateY(-3px) scale(1.05);
-          box-shadow: 0 5px 5px 0px #000000;
-          border-color: #3df804; }
-
 /*MAIN COMPRAR*/
 .comprarMain {
   grid-area: main;
@@ -255,6 +201,60 @@
     margin-top: 30px;
     border-radius: 10px;
     font-family: 'Oswald', sans-serif; }
+
+/*MAIN CONTACTO*/
+.bodyContact {
+  grid-area: main;
+  background-color: black;
+  width: 100vw;
+  height: 100%;
+  padding-top: 20px; }
+  .bodyContact h1 {
+    background-color: #3df804;
+    text-align: center;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    height: 45px;
+    border-radius: 10px;
+    width: 200px; }
+  .bodyContact .bodyContactSection .bodyContactForm {
+    border-radius: 15px;
+    border-color: #3df804;
+    background-color: #000000;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+    text-align: center; }
+    .bodyContact .bodyContactSection .bodyContactForm .formDivButton {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 15px; }
+      .bodyContact .bodyContactSection .bodyContactForm .formDivButton:hover {
+        transition: .2s;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px #000000; }
+    .bodyContact .bodyContactSection .bodyContactForm .formItem {
+      display: flex;
+      flex-direction: column;
+      padding: .5em;
+      justify-content: center; }
+      .bodyContact .bodyContactSection .bodyContactForm .formItem label {
+        padding: .5em 1em .5em 0;
+        color: #3df804;
+        font-size: 25px;
+        text-align: center;
+        margin: auto; }
+      .bodyContact .bodyContactSection .bodyContactForm .formItem .formInput {
+        background-color: black;
+        color: #3df804;
+        width: 50%;
+        text-align: center;
+        margin: auto; }
+        .bodyContact .bodyContactSection .bodyContactForm .formItem .formInput:hover {
+          transition: .2s;
+          transform: translateY(-3px) scale(1.05);
+          box-shadow: 0 5px 5px 0px #000000;
+          border-color: #3df804; }
 
 /* MAIN NOSOTROS*/
 .nosotros {
