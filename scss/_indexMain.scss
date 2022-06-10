@@ -65,5 +65,9 @@
         font-family: 'Oswald', sans-serif;
         padding-bottom: 5px;
         margin-bottom: 10px;
+
+        @include responsive (mobile){
+            width: 300px;
+        }
     }
 }

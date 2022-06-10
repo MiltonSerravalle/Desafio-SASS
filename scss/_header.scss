@@ -19,28 +19,6 @@
         }
     }
 
-    .mobileMenu {
-        display: none;
-
-        @include responsive (mobile) {
-            display: block;
-            color: rgb(0, 0, 0);
-            background: #ffffff;
-            font-style: normal;
-            font-size: 1.2em;
-            padding: 10px;
-
-            #buttonMenu {
-                display: none;
-            }
-
-            input:checked~.bodyHeaderNav {
-                margin: 0;
-            }
-
-        }
-    }
-
     .bodyHeaderNav {
         @include responsive (mobile) {
             position: absolute;
@@ -84,6 +62,46 @@
                 }
             }
 
+        }
+
+    }
+
+    .mobileMenu {
+        label {
+            display: none;
+
+            @include responsive (mobile) {
+                display: block;
+                color: rgb(0, 0, 0);
+                background: #ffffff;
+                font-style: normal;
+                font-size: 1.2em;
+                padding: 10px;
+            }
+
+        }
+
+        .menu {
+            display: none;
+        }
+
+        #buttonMenu {
+            display: none;
+            
+        }
+        @include responsive (mobile){
+            #buttonMenu:checked~.bodyHeaderNav {
+                margin: 0;
+            }
+        }
+
+
+        #buttonMenu {
+            display: none;
+        }
+
+        input:checked~.bodyHeaderNav {
+            margin: 0;
         }
 
     }

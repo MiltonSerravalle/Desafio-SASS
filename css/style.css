@@ -28,20 +28,6 @@
         width: 300px;
         height: 200px;
         margin-right: 35px; } }
-  .bodyHeader .mobileMenu {
-    display: none; }
-    @media screen and (max-width: 525px) {
-      .bodyHeader .mobileMenu {
-        display: block;
-        color: black;
-        background: #ffffff;
-        font-style: normal;
-        font-size: 1.2em;
-        padding: 10px; }
-        .bodyHeader .mobileMenu #buttonMenu {
-          display: none; }
-        .bodyHeader .mobileMenu input:checked ~ .bodyHeaderNav {
-          margin: 0; } }
   @media screen and (max-width: 525px) {
     .bodyHeader .bodyHeaderNav {
       position: absolute;
@@ -76,6 +62,27 @@
       .bodyHeader .bodyHeaderNav ul li a:hover {
         background: #3df804;
         color: #0e0101; }
+  .bodyHeader .mobileMenu label {
+    display: none; }
+    @media screen and (max-width: 525px) {
+      .bodyHeader .mobileMenu label {
+        display: block;
+        color: black;
+        background: #ffffff;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px; } }
+  .bodyHeader .mobileMenu .menu {
+    display: none; }
+  .bodyHeader .mobileMenu #buttonMenu {
+    display: none; }
+  @media screen and (max-width: 525px) {
+    .bodyHeader .mobileMenu #buttonMenu:checked ~ .bodyHeaderNav {
+      margin: 0; } }
+  .bodyHeader .mobileMenu #buttonMenu {
+    display: none; }
+  .bodyHeader .mobileMenu input:checked ~ .bodyHeaderNav {
+    margin: 0; }
 
 /* MAIN INDEX */
 .bodyMain {
@@ -132,6 +139,9 @@
     font-family: 'Oswald', sans-serif;
     padding-bottom: 5px;
     margin-bottom: 10px; }
+    @media screen and (max-width: 525px) {
+      .bodyMain h2 {
+        width: 300px; } }
 
 /*MAIN COMPRAR*/
 .comprarMain {
