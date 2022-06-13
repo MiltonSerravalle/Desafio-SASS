@@ -233,6 +233,7 @@
     background-color: #000000;
     list-style-type: none;
     padding: 0;
+    padding-bottom: 20px;
     border-radius: 3px;
     text-align: center; }
     .bodyContact .bodyContactSection .bodyContactForm .formDivButton {
@@ -428,7 +429,8 @@
 /*FOOTER*/
 .bodyFoot {
   grid-area: footer;
-  background-color: grey; }
+  background-color: grey;
+  padding-bottom: 70px; }
   .bodyFoot ul {
     display: flex;
     justify-content: center;
