@@ -1,22 +1,26 @@
 /* HEADER */
-.bodyHeader {
-    grid-area: header;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+.conteiner {
+    .bodyHeader {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
 
-    @include responsive (mobile) {
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        @include responsive (mobile) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
 
-        img {
-            justify-content: center;
-            width: 300px;
-            height: 200px;
-            margin-right: 35px;
+            img {
+                justify-content: center;
+                width: 300px;
+                height: 200px;
+                margin-right: 70px;
+            }
         }
+
+
     }
 
     .bodyHeaderNav {
@@ -24,6 +28,7 @@
             position: absolute;
             width: 50%;
             margin-left: -70%;
+
         }
 
         ul {
@@ -66,43 +71,29 @@
 
     }
 
-    .mobileMenu {
+    .bodyHeaderMenu {
+
         label {
             display: none;
 
             @include responsive (mobile) {
+                box-sizing: border-box;
+                border: 2px solid black;
+                border-radius: 5px;
                 display: block;
                 color: rgb(0, 0, 0);
                 background: #ffffff;
                 font-style: normal;
                 font-size: 1.2em;
-                padding: 10px;
+                padding: 5px;
             }
 
         }
-
-        .menu {
-            display: none;
-        }
-
-        #buttonMenu {
-            display: none;
-            
-        }
-        @include responsive (mobile){
-            #buttonMenu:checked~.bodyHeaderNav {
-                margin: 0;
-            }
-        }
-
-
-        #buttonMenu {
-            display: none;
-        }
-
-        input:checked~.bodyHeaderNav {
+#buttonMenu {
+    display: none;
+        &:checked~.bodyHeaderNav {
             margin: 0;
         }
-
+    }
     }
 }
