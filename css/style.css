@@ -361,7 +361,8 @@
         font-size: 1rem; } }
     @media screen and (max-width: 353px) {
       .nosotros .nosotrosUl {
-        width: 200px; } }
+        width: 200px;
+        font-size: 1.35rem; } }
     .nosotros .nosotrosUl ul {
       margin: 40px; }
       .nosotros .nosotrosUl ul li {
@@ -542,10 +543,11 @@
           transform: translateY(-3px) scale(1.05);
           box-shadow: 0 5px 5px 0px black;
           filter: none; }
-        @media screen and (max-width: 353px) {
-          .bodyFoot ul li a {
-            margin: 0%;
-            text-align: center; } }
   .bodyFoot .bodyFootH4 {
     display: flex;
     justify-content: center; }
+    @media screen and (max-width: 353px) {
+      .bodyFoot .bodyFootH4 {
+        margin: 0%;
+        margin-top: 10px;
+        text-align: center; } }

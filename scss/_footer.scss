@@ -62,10 +62,7 @@
                     box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
                     filter: none;
                 }
-                @include responsive (smallMobile) {
-                    margin: 0%;
-                    text-align: center;
-                }
+                
 
             }
         }
@@ -74,5 +71,10 @@
     .bodyFootH4 {
         display: flex;
         justify-content: center;
+        @include responsive (smallMobile) {
+            margin: 0%;
+            margin-top: 10px;
+            text-align: center;
+        }
     }
 }
