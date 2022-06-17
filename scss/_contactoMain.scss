@@ -19,6 +19,9 @@
     }
 
     .bodyContactSection {
+        @include responsive (smallMobile) {
+            height: 350px;
+        }
 
         .bodyContactForm {
             border-radius: 15px;

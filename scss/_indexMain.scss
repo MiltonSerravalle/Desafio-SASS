@@ -1,14 +1,17 @@
-
 /* MAIN INDEX */
 
 .bodyMain {
     grid-area: main;
     background: black;
-    p{
+    @include responsive (smallMobile) {
+        margin: 0%;
+    }
+
+    p {
         @include responsive (mobile) {
             width: 250px;
-        align-items: center;
-        text-align: center;
+            align-items: center;
+            text-align: center;
         }
     }
 
@@ -24,6 +27,11 @@
         border-color: #ff0000;
         font-family: 'Anton', sans-serif;
         margin-top: 10px;
+
+        @include responsive (smallMobile) {
+            width: 220px;
+            height: 80px;
+        }
     }
 
     .mainImg {
@@ -36,11 +44,15 @@
         @include responsive (tablet) {
             gap: 20px;
         }
-        @include responsive (mobile) {flex-direction: column;
+
+        @include responsive (mobile) {
+            flex-direction: column;
             margin: 15px;
             justify-content: space-evenly;
             align-items: center;
-            gap: 20px;}
+            gap: 20px;
+        }
+      
 
         img {
             &:hover {
@@ -48,6 +60,10 @@
                 transform: translateY(-3px) scale(1.05);
                 box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
                 border: 2px solid $the-green;
+            }
+
+            @include responsive (smallMobile) {
+                width: 200px;
             }
         }
     }
@@ -66,8 +82,12 @@
         padding-bottom: 5px;
         margin-bottom: 10px;
 
-        @include responsive (mobile){
+        @include responsive (mobile) {
             width: 300px;
+        }
+        @include responsive (smallMobile) {
+            width: 200px;
+            height: 70px;
         }
     }
 }

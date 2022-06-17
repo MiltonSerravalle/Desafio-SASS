@@ -22,6 +22,9 @@
         margin: auto;
         font-family: 'Oswald', sans-serif;
         height: 40px;
+        @include responsive (smallMobile) {
+            width: 200px;
+        }
     }
 
     .nosotrosUl {
@@ -36,6 +39,9 @@
         @include responsive (tablet) {
             width: 300px;
             font-size: 1rem;
+        }
+        @include responsive (smallMobile) {
+           width: 200px;
         }
 
         ul {
@@ -67,6 +73,11 @@
             margin: 15px;
             text-align: center;
             margin: auto;
+        }
+        iframe {
+            @include responsive (smallMobile) {
+                width: 175px;
+            }
         }
     }
 }

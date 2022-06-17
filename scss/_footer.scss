@@ -18,6 +18,11 @@
             margin: 20px;
             list-style-type: none;
 
+            @include responsive (smallMobile) {
+                margin: 5px;
+            }
+
+
             .fb {
                 &:hover {
                     background: #4267b2;
@@ -56,6 +61,10 @@
                     transform: translateY(-3px) scale(1.05);
                     box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
                     filter: none;
+                }
+                @include responsive (smallMobile) {
+                    margin: 0%;
+                    text-align: center;
                 }
 
             }
